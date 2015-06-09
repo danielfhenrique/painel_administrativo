@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cupcake Premium Admin Template</title>
+	
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" href="style/reset.css" /> 
+    <!-- Main Style File -->
+    <link rel="stylesheet" type="text/css" href="style/root.css" /> 
+    <!-- Grid Styles -->
+    <link rel="stylesheet" type="text/css" href="style/grid.css" /> 
+    <!-- Typography Elements -->
+    <link rel="stylesheet" type="text/css" href="style/typography.css" /> 
+    <!-- Jquery UI -->
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.css" />
+    <!-- Jquery Plugin Css Files Base -->
+    <link rel="stylesheet" type="text/css" href="style/jquery-plugin-base.css" />
+    
+    <!--[if IE 7]>	  <link rel="stylesheet" type="text/css" href="style/ie7-style.css" />	<![endif]-->
+    
+    <!-- jquery base -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>
+    <!-- jquery plugins settings -->
+	<script type="text/javascript" src="js/jquery-settings.js"></script>
+    <!-- toggle -->
+	<script type="text/javascript" src="js/toogle.js"></script>
+    <!-- tipsy -->
+	<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+    <!-- uniform -->
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <!-- Jwysiwyg editor -->
+	<script type="text/javascript" src="js/jquery.wysiwyg.js"></script>
+    <!-- table shorter -->
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <!-- raphael base and raphael charts -->
+	<script type="text/javascript" src="js/raphael.js"></script>
+	<script type="text/javascript" src="js/analytics.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+    <!-- fullcalendar -->
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+    <!-- prettyPhoto -->
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <!-- Jquery.UI Base -->
+	<script type="text/javascript" src="js/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+    <!-- Slider -->
+	<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+    <!-- Date Picker -->
+	<script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+    <!-- Tabs -->
+	<script type="text/javascript" src="js/jquery.ui.tabs.js"></script>
+    <!-- Accordion -->
+	<script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
+    <!-- Google Js Api / Chart and others -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Date Tables -->
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	
+        
+    
+</head>
+<body>
+<div class="wrapper">
+
+
+
+
+	<!-- START HEADER -->
+    <div id="header">
+    
+    
+    	<!-- logo -->
+    	<div class="logo">	<a href="index.html"><img src="img/logo.png" width="112" height="35" alt="logo"/></a>	</div>
+        
+        
+        <!-- notifications -->
+        <div id="notifications">
+        	<a href="index.html" class="qbutton-left"><img src="img/icons/header/dashboard.png" width="16" height="15" alt="dashboard" /></a>
+        	<a href="#" class="qbutton-normal tips"><img src="img/icons/header/message.png" width="19" height="13" alt="message" /> <span class="qballon">23</span> </a>
+        	<a href="#" class="qbutton-right"><img src="img/icons/header/support.png" width="19" height="13" alt="support" /> <span class="qballon">8</span> </a>
+          <div class="clear"></div>
+        </div>
+        
+        
+        <!-- quick menu -->
+        <div id="quickmenu">
+        	<a href="#" class="qbutton-left tips" title="Add a new post"><img src="img/icons/header/newpost.png" width="18" height="14" alt="new post" /></a>
+        	<a id="open-stats" href="#" class="qbutton-right tips" title="Statistics"><img src="img/icons/header/graph.png" width="17" height="15" alt="graph" /></a>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <!-- profile box -->
+        <div id="profilebox">
+        	<a href="#" class="display">
+            	<img src="img/simple-profile-img.jpg" width="33" height="33" alt="profile"/>	<b>Logged in as</b>	<span>Administrator</span>
+            </a>
+            
+            <div class="profilemenu">
+            	<ul>
+                	<li><a href="#">Account Settings</a></li>
+                	<li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        
+        <div class="clear"></div>
+    </div>
+    <!-- END HEADER -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- START MAIN -->
+    <div id="main">
+    
+		
+        
+        
+        
+        <!-- START SIDEBAR -->
+        <div id="sidebar">
+        	
+            <!-- start searchbox -->
+            <div id="searchbox">
+            	<div class="in">
+               	  <form id="form1" name="form1" method="post" action="">
+                  	<input name="textfield" type="text" class="input" id="textfield" onfocus="$(this).attr('class','input-hover')" onblur="$(this).attr('class','input')"  />
+               	  </form>
+            	</div>
+            </div>
+            <!-- end searchbox -->
+            
+            <!-- start sidemenu -->
+            <div id="sidemenu">
+            	<ul>
+                	<li><a href="index.html"><img src="img/icons/sidemenu/laptop.png" width="16" height="16" alt="icon"/>Dashboard</a></li>
+                    <li><a href="form-elements.html"><img src="img/icons/sidemenu/copy.png" width="16" height="16" alt="icon"/>Form Elements</a></li>
+                    <li><a href="table-chart.html"><img src="img/icons/sidemenu/user.png" width="16" height="16" alt="icon"/>Table &amp; Chart</a></li>
+                	<li><a href="interface-elements.html"><img src="img/icons/sidemenu/lock.png" width="16" height="16" alt="icon"/>Interface Elements</a></li>
+                    <li class="active"><a href="typography.html"><img src="img/icons/sidemenu/file_edit.png" width="16" height="16" alt="icon"/>Typography	</a></li>
+                    <li><a href="gallery.html"><img src="img/icons/sidemenu/image.png" width="16" height="16" alt="icon"/>Gallery &amp; Media 	<span class="ballon">9</span>	</a></li>
+                    <li><a href="widgets.html"><img src="img/icons/sidemenu/star.png" width="16" height="16" alt="icon"/>Widgets</a></li>
+                    
+                    <!-- start submenu with icon -->
+                    <li class="subtitle">
+                    	<a class="action tips-right" href="#" title="Submenu with icon"><img src="img/icons/sidemenu/mail.png" width="16" height="16" alt="icon"/>Submenu<img src="img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /></a>
+                    	<ul class="submenu">
+                        <li><a href="#"><img src="img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Search File</a></li>
+                        <li><a href="#"><img src="img/icons/sidemenu/print.png" width="16" height="16" alt="icon"/>New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#"><img src="img/icons/sidemenu/trash.png" width="16" height="16" alt="icon"/>Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu with icon -->
+
+                    <li><a href="error-pages.html"><img src="img/icons/sidemenu/comment.png" width="16" height="16" alt="icon"/>Error Pages</a></li>
+                    <li><a href="buttons-icons.html"><img src="img/icons/sidemenu/arrow_down.png" width="16" height="16" alt="icon"/>Button &amp; Icons</a></li>
+                    <li><a href="grid-styles.html"><img src="img/icons/sidemenu/file.png" width="16" height="16" alt="icon"/>Grid Styles	<span class="ballon">67</span>	</a></li>
+                    <li><a href="alert-dialog-boxes.html"><img src="img/icons/sidemenu/attach.png" width="16" height="16" alt="icon"/>Alert &amp; Dialog Boxes</a></li>
+                    <li><a href="calendar.html"><img src="img/icons/sidemenu/calendar.png" width="16" height="16" alt="icon"/>Calendar</a></li>
+                    
+                    <!-- start submenu without icon -->
+                    <li class="subtitle">
+                    	<a class="action" href="#"><img src="img/icons/sidemenu/download.png" width="16" height="16" alt="icon"/>Submenu Text<img src="img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /> </a>
+                    	<ul class="submenu">
+                        <li><a href="#">Search File</a></li>
+                        <li><a href="#">New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#">Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu without icon -->
+                    
+                </ul>
+            </div>
+            <!-- end sidemenu -->
+            
+        </div>
+        <!-- END SIDEBAR -->
+        
+        
+        
+        
+        
+        
+        
+        <!-- START PAGE -->
+        <div id="page">
+        	
+            	<!-- start stats -->
+                <div id="stats">
+                    <!-- use it up/down on <b> tag for different colors -->
+                	<div class="column">	<b>$326.45</b>	Earnings of today</div>
+                	<div class="column">	<b>$96.25</b>	Earnings of last hour</div>
+                	<div class="column">	<b>23.695</b>	Total Sales</div>
+                	<div class="column">	<b class="down">46.230</b>	Active Comments</div>
+                    <!-- this is last column -->
+                	<div class="column last">	<b class="up">$3.928</b>	every per hours</div>
+                    <a href="#" title="Close Stats" class="close tips">close</a>
+                    <img src="img/icons/mini/stats-arrow-top.png" width="17" height="9" alt="arrow" class="arrow" />
+                </div>
+                <!-- end stats -->
+            	
+                
+                <!-- start page title -->
+                <div class="page-title">
+                	<div class="in">
+                    		<div class="titlebar">	<h2>TYPOGRAPHY</h2>	<p>Typograpghy elements</p></div>
+                            
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Refresh"><img src="img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Dashboard"><img src="img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Add New Item"><img src="img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Search on This Page"><img src="img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Information for this page"><img src="img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            
+                            <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                
+                
+                
+                
+                
+                
+                
+                	<!-- START CONTENT -->
+                    <div class="content">
+                    
+                    	
+                        
+                        
+                        
+                        
+                        <!-- START HEADING -->
+                        <div class="grid450-left">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Headings</h3>
+                                <p>&lt;h&gt; and &lt;p&gt; tags</p>
+                            </div>
+                            
+                            
+                            <h1 class="h1-tag">This is a H1 heading</h1>
+                            <p class="p-tag">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat...</p>
+
+                            
+                            <h1 class="h2-tag">This is a H2 heading</h1>
+                            <p class="p-tag">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat...</p>
+
+                            
+                            <h1 class="h3-tag">This is a H3 heading</h1>
+                            <p class="p-tag">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat...</p>
+
+                            
+                            <h1 class="h4-tag">This is a H4 heading</h1>
+                            <p class="p-tag">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat...</p>
+
+                            
+                            <h1 class="h5-tag">This is a H5 heading</h1>
+                            <p class="p-tag">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat...</p>
+
+                            
+                            <h1 class="h6-tag">This is a H6 heading</h1>
+                            <p class="p-tag">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat...</p>
+                            
+                            	
+                         
+                         <div class="clear"></div>   
+                        </div>
+                        <!-- END HEADING -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- START Blockquote AND List styles -->
+                        <div class="grid270-right">
+                        
+                        	
+                            <!-- blockquote -->
+                        	<div class="st-tinytitle">
+                            	<h3>Blockquote</h3>
+                                <p>&lt;blockquote&gt; tag</p>
+                            </div>
+                            	
+                            	<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+                        
+                        	
+                            <br /><br />
+                            
+                            <!-- list plus -->
+                        	<div class="st-tinytitle">
+                            	<h3>List Style : Plus</h3>
+                                <p>list style with plus icons</p>
+                            </div>
+                            	
+                                <ul class="list-plus">
+                                	<li>Duis autem vel eum iriure dolor </li>
+                                	<li>Hendrerit in vulputate velit </li>
+                                	<li>Duis autem vel eum iriure dolor </li>
+                                	<li>Hendrerit in vulputate velit </li>
+                                </ul>
+                        
+                        	
+                            <br /><br />
+                            
+                            <!-- list arrow -->
+                        	<div class="st-tinytitle">
+                            	<h3>List Style : Arrow</h3>
+                                <p>list style with arrow icons</p>
+                            </div>
+                            	
+                                <ul class="list-arrow">
+                                	<li>Duis autem vel eum iriure dolor </li>
+                                	<li>Hendrerit in vulputate velit </li>
+                                	<li>Duis autem vel eum iriure dolor </li>
+                                	<li>Hendrerit in vulputate velit </li>
+                                </ul>
+                        
+                        
+                        </div>
+                        <!-- END Blockquote AND List styles -->
+                    	
+                        
+                        
+
+                        <div class="clear"></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- START CODE -->
+                      <div class="grid740">
+                        
+                       	<div class="st-tinytitle">
+                            	<h3>Code</h3>
+                                <p>Code style</p>
+                          </div>
+                            
+                            
+
+                           
+                       	  <code>
+                           	  <span class="code-title">Code Title Here :</span><!-- // code title // -->
+                              start:  GET test.html --&gt; referrer := <strong>null</strong><br />
+                              `--&gt; GET style.css --&gt; referrer := test.html<br />
+                              ---- CLICK ON LINK TO GO TO: '<strong>form.html</strong>'<br />
+                              GET form.html --&gt; referrer := <strong>test.html</strong><br />
+                              `--&gt; GET sendRequest.js --&gt; referrer := <strong>form.html</strong><br />
+                              `--&gt; GET style.css --&gt; referrer := form.html<br />
+                              ---- CALL A PAGE DIRECTLY OVER ADDRESS BAR: <strong>http://somedomain.com/someotherpage.html</strong><br />
+                              GET someotherpage.html --&gt; referrer := null 
+                         </code>
+                            
+                            
+                            
+                        </div>
+                        <!-- START CODE -->
+                        
+                        
+                        
+                        
+                        
+                        <!-- START CODE -->
+                      <div class="grid740">
+                        
+                       	<div class="st-tinytitle">
+                            	<h3>Highlights</h3>
+                                <p>Highlight styles</p>
+                          </div>
+                          
+                          		<p><strong>&lt;strong class=&quot;hg-yellow&quot;&gt; ... &lt;/strong&gt;</strong></p>
+                          		Lorem ipsum dolor sit amet, consectetuer  elit, sed diam nonummy <strong class="hg-yellow">Yellow</strong> nibh euismod.
+                          		
+                                <br /><br />
+                          		  
+                          		<p><strong>&lt;strong class=&quot;hg-red&quot;&gt; ... &lt;/strong&gt;</strong></p>
+                          		Lorem ipsum dolor sit amet, consectetuer  elit, sed diam nonummy <strong class="hg-red">Red</strong> nibh euismod.
+                          		
+                                <br /><br />
+                          		  
+                          		<p><strong>&lt;strong class=&quot;hg-blue&quot;&gt; ... &lt;/strong&gt;</strong></p>
+                          		Lorem ipsum dolor sit amet, consectetuer  elit, sed diam nonummy <strong class="hg-blue">Blue</strong> nibh euismod.
+                          		
+                                <br /><br />
+                          		  
+                          		<p><strong>&lt;strong class=&quot;hg-green&quot;&gt; ... &lt;/strong&gt;</strong></p>
+                          		Lorem ipsum dolor sit amet, consectetuer  elit, sed diam nonummy <strong class="hg-green">Green</strong> nibh euismod.
+                          		
+                                <br /><br />
+                          		  
+                          		<p><strong>&lt;strong class=&quot;hg-purple&quot;&gt; ... &lt;/strong&gt;</strong></p>
+                          		Lorem ipsum dolor sit amet, consectetuer  elit, sed diam nonummy <strong class="hg-purple">Purple</strong> nibh euismod.
+                          		
+                                <br /><br />
+                          		  
+                          		<p><strong>&lt;strong class=&quot;hg-gray&quot;&gt; ... &lt;/strong&gt;</strong></p>
+                          		Lorem ipsum dolor sit amet, consectetuer  elit, sed diam nonummy <strong class="hg-gray">Gray</strong> nibh euismod.
+                          		
+                          		  
+               		    </p>
+                      </div>
+                        <!-- START CODE -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- START Text Box -->
+                        <div class="grid450-left">
+                            	
+                                <div class="simplebox">
+                                	<div class="titleh"><h3>Text Box</h3></div>
+                                    <div class="body">
+                                    	<p class="padding-in">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                    </div>
+                                </div>
+                         
+                         <div class="clear"></div>   
+                        </div>
+                        <!-- END Text Box -->
+                        
+                        
+                        
+                        
+                        
+                        <!-- START Text box -->
+                        <div class="grid270-right">
+                        
+                                <div class="simplebox">
+                                	<div class="titleh"><h3>Text Box 2</h3></div>
+                                    <div class="body">
+                                    	<p class="padding-in">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                        
+                        </div>
+                        <!-- END Text box -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    
+                    </div>
+                    <!-- END CONTENT -->
+                
+            
+            
+            
+            
+            
+            
+        </div>
+        <!-- END PAGE -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="clear"></div>
+    </div>
+    <!-- END MAIN -->
+    
+    
+    
+    
+    
+    
+    <!-- START FOOTER -->
+    <div id="footer">
+    	<div class="left-column">© Copyright 2012 - All rights reserved.</div>
+        <div class="right-column">Cupcake theme by <a href="http://themeforest.net/user/egemem" target="_blank">egemem</a></div>
+    </div>
+    <!-- END FOOTER -->
+    
+    
+    
+    
+    
+
+
+
+
+
+</div>
+</body>
+</html>

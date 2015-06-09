@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cupcake Premium Admin Template</title>
+	
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" href="cupcake/style/reset.css" /> 
+    <!-- Main Style File -->
+    <link rel="stylesheet" type="text/css" href="cupcake/style/root.css" /> 
+    <!-- Grid Styles -->
+    <link rel="stylesheet" type="text/css" href="cupcake/style/grid.css" /> 
+    <!-- Typography Elements -->
+    <link rel="stylesheet" type="text/css" href="cupcake/style/typography.css" /> 
+    <!-- Jquery UI -->
+    <link rel="stylesheet" type="text/css" href="cupcake/style/jquery-ui.css" />
+    <!-- Jquery Plugin Css Files Base -->
+    <link rel="stylesheet" type="text/css" href="cupcake/style/jquery-plugin-base.css" />
+    
+    <!--[if IE 7]>	  <link rel="stylesheet" type="text/css" href="cupcake/style/ie7-style.css" />	<![endif]-->
+    
+    <!-- jquery base -->
+	<script type="text/javascript" src="cupcake/js/jquery.min.js"></script>
+	<script type="text/javascript" src="cupcake/js/jquery-ui-1.8.11.custom.min.js"></script>
+    <!-- jquery plugins settings -->
+	<script type="text/javascript" src="cupcake/js/jquery-settings.js"></script>
+    <!-- toggle -->
+	<script type="text/javascript" src="cupcake/js/toogle.js"></script>
+    <!-- tipsy -->
+	<script type="text/javascript" src="cupcake/js/jquery.tipsy.js"></script>
+    <!-- uniform -->
+	<script type="text/javascript" src="cupcake/js/jquery.uniform.min.js"></script>
+    <!-- Jwysiwyg editor -->
+	<script type="text/javascript" src="cupcake/js/jquery.wysiwyg.js"></script>
+    <!-- table shorter -->
+	<script type="text/javascript" src="cupcake/js/jquery.tablesorter.min.js"></script>
+    <!-- raphael base and raphael charts -->
+	<script type="text/javascript" src="cupcake/js/raphael.js"></script>
+	<script type="text/javascript" src="cupcake/js/analytics.js"></script>
+	<script type="text/javascript" src="cupcake/js/popup.js"></script>
+    <!-- fullcalendar -->
+	<script type="text/javascript" src="cupcake/js/fullcalendar.min.js"></script>
+    <!-- prettyPhoto -->
+	<script type="text/javascript" src="cupcake/js/jquery.prettyPhoto.js"></script>
+    <!-- Jquery.UI Base -->
+	<script type="text/javascript" src="cupcake/js/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="cupcake/js/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="cupcake/js/jquery.ui.widget.js"></script>
+    <!-- Slider -->
+	<script type="text/javascript" src="cupcake/js/jquery.ui.slider.js"></script>
+    <!-- Date Picker -->
+	<script type="text/javascript" src="cupcake/js/jquery.ui.datepicker.js"></script>
+    <!-- Tabs -->
+	<script type="text/javascript" src="cupcake/js/jquery.ui.tabs.js"></script>
+    <!-- Accordion -->
+	<script type="text/javascript" src="cupcake/js/jquery.ui.accordion.js"></script>
+    <!-- Google Js Api / Chart and others -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!-- Date Tables -->
+	<script type="text/javascript" src="cupcake/js/jquery.dataTables.js"></script>
+	
+        
+    
+</head>
+<body>
+<div class="wrapper">
+
+
+
+
+	<!-- START HEADER -->
+    <div id="header">
+    
+    
+    	<!-- logo -->
+    	<div class="logo">	<a href="index.html"><img src="cupcake/img/logo.png" width="112" height="35" alt="logo"/></a>	</div>
+        
+        
+        <!-- notifications -->
+        <div id="notifications">
+        	<a href="index.html" class="qbutton-left"><img src="cupcake/img/icons/header/dashboard.png" width="16" height="15" alt="dashboard" /></a>
+        	<a href="#" class="qbutton-normal tips"><img src="cupcake/img/icons/header/message.png" width="19" height="13" alt="message" /> <span class="qballon">23</span> </a>
+        	<a href="#" class="qbutton-right"><img src="cupcake/img/icons/header/support.png" width="19" height="13" alt="support" /> <span class="qballon">8</span> </a>
+          <div class="clear"></div>
+        </div>
+        
+        
+        <!-- quick menu -->
+        <div id="quickmenu">
+        	<a href="#" class="qbutton-left tips" title="Add a new post"><img src="cupcake/img/icons/header/newpost.png" width="18" height="14" alt="new post" /></a>
+        	<a id="open-stats" href="#" class="qbutton-right tips" title="Statistics"><img src="cupcake/img/icons/header/graph.png" width="17" height="15" alt="graph" /></a>
+            <div class="clear"></div>
+        </div>
+        
+        
+        <!-- profile box -->
+        <div id="profilebox">
+        	<a href="#" class="display">
+            	<img src="cupcake/img/simple-profile-img.jpg" width="33" height="33" alt="profile"/>	<b>Logged in as</b>	<span>Administrator</span>
+            </a>
+            
+            <div class="profilemenu">
+            	<ul>
+                	<li><a href="#">Account Settings</a></li>
+                	<li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        
+        <div class="clear"></div>
+    </div>
+    <!-- END HEADER -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- START MAIN -->
+    <div id="main">
+    
+		
+        
+        
+        
+        <!-- START SIDEBAR -->
+        <div id="sidebar">
+        	
+            <!-- start searchbox -->
+            <div id="searchbox">
+            	<div class="in">
+               	  <form id="form1" name="form1" method="post" action="">
+                  	<input name="textfield" type="text" class="input" id="textfield" onfocus="$(this).attr('class','input-hover')" onblur="$(this).attr('class','input')"  />
+               	  </form>
+            	</div>
+            </div>
+            <!-- end searchbox -->
+            
+            <!-- start sidemenu -->
+            <div id="sidemenu">
+            	<ul>
+                	<li><a href="index.html"><img src="cupcake/img/icons/sidemenu/laptop.png" width="16" height="16" alt="icon"/>Dashboard</a></li>
+                    <li><a href="form-elements.html"><img src="cupcake/img/icons/sidemenu/copy.png" width="16" height="16" alt="icon"/>Form Elements</a></li>
+                    <li><a href="table-chart.html"><img src="cupcake/img/icons/sidemenu/user.png" width="16" height="16" alt="icon"/>Table &amp; Chart</a></li>
+                	<li><a href="interface-elements.html"><img src="cupcake/img/icons/sidemenu/lock.png" width="16" height="16" alt="icon"/>Interface Elements</a></li>
+                    <li><a href="typography.html"><img src="cupcake/img/icons/sidemenu/file_edit.png" width="16" height="16" alt="icon"/>Typography	</a></li>
+                    <li><a href="gallery.html"><img src="cupcake/img/icons/sidemenu/image.png" width="16" height="16" alt="icon"/>Gallery &amp; Media 	<span class="ballon">9</span>	</a></li>
+                    <li><a href="widgets.html"><img src="cupcake/img/icons/sidemenu/star.png" width="16" height="16" alt="icon"/>Widgets</a></li>
+                    
+                    <!-- start submenu with icon -->
+                    <li class="subtitle">
+                    	<a class="action tips-right" href="#" title="Submenu with icon"><img src="cupcake/img/icons/sidemenu/mail.png" width="16" height="16" alt="icon"/>Submenu<img src="cupcake/img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /></a>
+                    	<ul class="submenu">
+                        <li><a href="#"><img src="cupcake/img/icons/sidemenu/magnify.png" width="16" height="16" alt="icon"/>Search File</a></li>
+                        <li><a href="#"><img src="cupcake/img/icons/sidemenu/print.png" width="16" height="16" alt="icon"/>New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#"><img src="cupcake/img/icons/sidemenu/trash.png" width="16" height="16" alt="icon"/>Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu with icon -->
+
+                    <li><a href="error-pages.html"><img src="cupcake/img/icons/sidemenu/comment.png" width="16" height="16" alt="icon"/>Error Pages</a></li>
+                    <li class="active"><a href="buttons-icons.html"><img src="cupcake/img/icons/sidemenu/arrow_down.png" width="16" height="16" alt="icon"/>Button &amp; Icons</a></li>
+                    <li><a href="grid-styles.html"><img src="cupcake/img/icons/sidemenu/file.png" width="16" height="16" alt="icon"/>Grid Styles	<span class="ballon">67</span>	</a></li>
+                    <li><a href="alert-dialog-boxes.html"><img src="cupcake/img/icons/sidemenu/attach.png" width="16" height="16" alt="icon"/>Alert &amp; Dialog Boxes</a></li>
+                    <li><a href="calendar.html"><img src="cupcake/img/icons/sidemenu/calendar.png" width="16" height="16" alt="icon"/>Calendar</a></li>
+                    
+                    <!-- start submenu without icon -->
+                    <li class="subtitle">
+                    	<a class="action" href="#"><img src="cupcake/img/icons/sidemenu/download.png" width="16" height="16" alt="icon"/>Submenu Text<img src="cupcake/img/arrow-down.png" width="7" height="4" alt="arrow" class="arrow" /> </a>
+                    	<ul class="submenu">
+                        <li><a href="#">Search File</a></li>
+                        <li><a href="#">New Files	<span class="ballon">693</span>	</a></li>
+                        <li><a href="#">Others	<span class="ballon">4</span>	</a></li>
+                        </ul>
+                    </li>
+                    <!-- end submenu without icon -->
+                    
+                </ul>
+            </div>
+            <!-- end sidemenu -->
+            
+        </div>
+        <!-- END SIDEBAR -->
+        
+        
+        
+        
+        
+        
+        
+        <!-- START PAGE -->
+        <div id="page">
+        	
+            	<!-- start stats -->
+                <div id="stats">
+                    <!-- use it up/down on <b> tag for different colors -->
+                	<div class="column">	<b>$326.45</b>	Earnings of today</div>
+                	<div class="column">	<b>$96.25</b>	Earnings of last hour</div>
+                	<div class="column">	<b>23.695</b>	Total Sales</div>
+                	<div class="column">	<b class="down">46.230</b>	Active Comments</div>
+                    <!-- this is last column -->
+                	<div class="column last">	<b class="up">$3.928</b>	every per hours</div>
+                    <a href="#" title="Close Stats" class="close tips">close</a>
+                    <img src="cupcake/img/icons/mini/stats-arrow-top.png" width="17" height="9" alt="arrow" class="arrow" />
+                </div>
+                <!-- end stats -->
+            	
+                
+                <!-- start page title -->
+                <div class="page-title">
+                	<div class="in">
+                    		<div class="titlebar">	<h2>BUTTONS &amp; ICONS</h2>	<p>Too many button &amp; icon styles</p></div>
+                            
+                            <div class="shortcuts-icons">
+                            	<a class="shortcut tips" href="#" title="Refresh"><img src="cupcake/img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Dashboard"><img src="cupcake/img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Add New Item"><img src="cupcake/img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Search on This Page"><img src="cupcake/img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Information for this page"><img src="cupcake/img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                            </div>
+                            
+                            <div class="clear"></div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                
+                
+                
+                
+                
+                
+                
+                	<!-- START CONTENT -->
+                    <div class="content">
+                    
+                    	
+                        
+                        
+                        
+                        
+                        <!-- START ICON BUTTONS -->
+                        <div class="grid740">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Icon Buttons (80 icons in total)</h3>
+                                <p>Simple icon buttons without text</p>
+                            </div>
+                            
+                            	
+                                <a href="#" class="icon-button tips" title="Cup"><img src="cupcake/img/icons/button/cup.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Download"><img src="cupcake/img/icons/button/download.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Finish Flag"><img src="cupcake/img/icons/button/finish-flag.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Home"><img src="cupcake/img/icons/button/home.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Search"><img src="cupcake/img/icons/button/search.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Slide"><img src="cupcake/img/icons/button/slide.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Arrow Down"><img src="cupcake/img/icons/button/arrow-down.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Arrow Right"><img src="cupcake/img/icons/button/arrow-right.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Alert"><img src="cupcake/img/icons/button/alert.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Bubble"><img src="cupcake/img/icons/button/bubble.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Chart"><img src="cupcake/img/icons/button/chart2.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Dribble"><img src="cupcake/img/icons/button/dribble.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Create"><img src="cupcake/img/icons/button/create.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Female"><img src="cupcake/img/icons/button/female.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Clock"><img src="cupcake/img/icons/button/clock2.png" width="18" height="18" alt="icon"/></a>
+                                
+                                <br /><br /><br /><br />
+                                
+                                <a href="#" class="icon-button tips" title="Help"><img src="cupcake/img/icons/button/help.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Info"><img src="cupcake/img/icons/button/info.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Laptop"><img src="cupcake/img/icons/button/laptop.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Link"><img src="cupcake/img/icons/button/link.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Lock"><img src="cupcake/img/icons/button/lock.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Mail"><img src="cupcake/img/icons/button/mail.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Map"><img src="cupcake/img/icons/button/map.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Megaphone"><img src="cupcake/img/icons/button/megaphone.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Money"><img src="cupcake/img/icons/button/money.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Paypal"><img src="cupcake/img/icons/button/paypal.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Visa"><img src="cupcake/img/icons/button/visa.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Users"><img src="cupcake/img/icons/button/users.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="User Comment"><img src="cupcake/img/icons/button/user-comment.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="User"><img src="cupcake/img/icons/button/user.png" width="18" height="18" alt="icon"/></a>
+                                <a href="#" class="icon-button tips" title="Setting"><img src="cupcake/img/icons/button/settings.png" width="18" height="18" alt="icon"/></a>
+                                
+                            	
+                         
+                         <div class="clear"></div>   
+                        </div>
+                        <!-- END ICON BUTTONS -->
+                    	
+                        
+                        <br /><br /><br /><br />
+                        
+                        
+                        <!-- START ICON BUTTONS -->
+                        <div class="grid740">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Icon Buttons With Text (80 icons in total)</h3>
+                                <p>Simple icon buttons with text</p>
+                            </div>
+                            
+                            	
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/create.png" width="18" height="18" alt="icon"/><span>Create a New Post</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/cut.png" width="18" height="18" alt="icon"/><span>Cut</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/download.png" width="18" height="18" alt="icon"/><span>Download</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/folder.png" width="18" height="18" alt="icon"/><span>Folder</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/graph.png" width="18" height="18" alt="icon"/><span>Graph</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/power.png" width="18" height="18" alt="icon"/><span>Power</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/printer.png" width="18" height="18" alt="icon"/><span>Printer</span></a>
+                                
+                                <br /><br /><br /><br />
+                                
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/world.png" width="18" height="18" alt="icon"/><span>World</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/phone.png" width="18" height="18" alt="icon"/><span>Phone</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/shopping-cart2.png" width="18" height="18" alt="icon"/><span>Shopping Cart</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/money.png" width="18" height="18" alt="icon"/><span>Money</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/arrow-up.png" width="18" height="18" alt="icon"/><span>Arrow</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/bubble.png" width="18" height="18" alt="icon"/><span>Bubble</span></a>
+                                <a href="#" class="icon-button"><img src="cupcake/img/icons/button/plane-suitcase.png" width="18" height="18" alt="icon"/><span>Plane Suitcase</span></a>
+                                
+                            	
+                         
+                         <div class="clear"></div>   
+                        </div>
+                        <!-- END ICON BUTTONS -->
+                        
+                        
+                        <br /><br /><br /><br />
+
+                        
+                        <!-- START SHORTCUT BUTTON -->
+                        <div class="grid740">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Shortcut Icons</h3>
+                                <p>User-friendly shortcut buttons for your widgets or pages</p>
+                            </div>
+                            
+                            	<a class="shortcut tips" href="#" title="Refresh"><img src="cupcake/img/icons/shortcut/refresh.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Dashboard"><img src="cupcake/img/icons/shortcut/dashboard.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Add New Item"><img src="cupcake/img/icons/shortcut/plus.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Search on This Page"><img src="cupcake/img/icons/shortcut/search.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Information for this page"><img src="cupcake/img/icons/shortcut/question.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Ballon"><img src="cupcake/img/icons/shortcut/ballon.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Clock"><img src="cupcake/img/icons/shortcut/clock.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Copy"><img src="cupcake/img/icons/shortcut/copy.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="New File"><img src="cupcake/img/icons/shortcut/file.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Folder"><img src="cupcake/img/icons/shortcut/folder.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Message"><img src="cupcake/img/icons/shortcut/message.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Print This Page"><img src="cupcake/img/icons/shortcut/print.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Rss"><img src="cupcake/img/icons/shortcut/rss.png" width="25" height="25" alt="icon" /></a>
+                            	<a class="shortcut tips" href="#" title="Tags"><img src="cupcake/img/icons/shortcut/tags.png" width="25" height="25" alt="icon" /></a>
+                                
+                            	
+                         
+                         <div class="clear"></div>   
+                        </div>
+                        <!-- END SHORTCUT BUTTON -->
+                        
+                        
+                        <br /><br /><br /><br />
+
+                        
+                        <!-- START COLORFUL BUTTON -->
+                        <div class="grid740">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Colorful Buttons</h3>
+                                <p>Sweet colorful buttons</p>
+                            </div>
+                            
+                            	<a class="button-blue" href="#">Submit</a>
+                            	<a class="button-aqua" href="#">Submit</a>
+                            	<a class="button-green" href="#">Submit</a>
+                            	<a class="button-gray" href="#">Submit</a>
+                            	<a class="button-red" href="#">Submit</a>
+                                
+                            	
+                         
+                         <div class="clear"></div>   
+                        </div>
+                        <!-- END COLORFUL BUTTON -->
+                        
+                        
+                        <br /><br /><br /><br />
+
+                        
+                        
+                        
+                        <!-- start dashbutton -->
+                        <div class="grid740">
+                        
+                        	<div class="st-tinytitle">
+                            	<h3>Dash Buttons</h3>
+                                <p>35 buttons and icons in total</p>
+                            </div>
+
+                        	<a href="#" class="dashbutton tips" title="Dashbutton with tipbox">	<img src="cupcake/img/icons/dashbutton/bubbles.png" width="44" height="32" alt="icon" />	<b>Bubbles</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/graph.png" width="44" height="32" alt="icon" />	<b>Grap</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/image.png" width="44" height="32" alt="icon" />	<b>Photo</b>	simple title hereo</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/map.png" width="44" height="32" alt="icon" />	<b>Map</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/personal-folder.png" width="44" height="32" alt="icon" />	<b>Personal Folder</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/creadit-card.png" width="47" height="32" alt="icon" />	<b>Creadit Card</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/settings.png" width="39" height="32" alt="icon" />	<b>Settings</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/users.png" width="41" height="32" alt="icon" />	<b>Users</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/frames.png" width="41" height="32" alt="icon" />	<b>Frames</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/applications.png" width="32" height="32" alt="icon" />	<b>Applications</b>	simple title here</a>
+                            
+                        	<a href="#" class="dashbutton tips" title="Dashbutton with tipbox">	<img src="cupcake/img/icons/dashbutton/bubble.png" width="36" height="32" alt="icon" />	<b>Support Center</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/calendar.png" width="35" height="32" alt="icon" />	<b>Calendar</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/chemical.png" width="32" height="32" alt="icon" />	<b>Chemical</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/clock.png" width="31" height="32" alt="icon" />	<b>Clock</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/documents.png" width="25" height="32" alt="icon" />	<b>Documents</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/group.png" width="55" height="32" alt="icon" />	<b>Group</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/help.png" width="32" height="32" alt="icon" />	<b>Help</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/inbox.png" width="55" height="32" alt="icon" />	<b>Inbox</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/info.png" width="32" height="32" alt="icon" />	<b>Info</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/iphone4.png" width="20" height="32" alt="icon" />	<b>iPhone</b>	simple title here</a>
+                            
+                        	<a href="#" class="dashbutton tips" title="Dashbutton with tipbox">	<img src="cupcake/img/icons/dashbutton/keyboard.png" width="62" height="32" alt="icon" />	<b>Keyboard</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/lock.png" width="30" height="32" alt="icon" />	<b>Lock</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/locked-folder.png" width="46" height="32" alt="icon" />	<b>Locked Folder</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/mail.png" width="49" height="32" alt="icon" />	<b>Mail</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/megaphone.png" width="33" height="32" alt="icon" />	<b>Megaphone</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/paypal.png" width="38" height="32" alt="icon" />	<b>Paypal</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/money.png" width="49" height="32" alt="icon" />	<b>Money</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/pc.png" width="33" height="32" alt="icon" />	<b>Pc / Mac</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/shopping-cart.png" width="32" height="32" alt="icon" />	<b>Shopping Cart</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/signal.png" width="35" height="32" alt="icon" />	<b>Signal</b>	simple title here</a>
+                            
+                        	<a href="#" class="dashbutton tips" title="Dashbutton with tipbox">	<img src="cupcake/img/icons/dashbutton/sticky-note.png" width="36" height="32" alt="icon" />	<b>Sticky Note</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/timer.png" width="32" height="32" alt="icon" />	<b>Timer</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/user-comment.png" width="34" height="32" alt="icon" />	<b>User Comment</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/write.png" width="31" height="32" alt="icon" />	<b>Write</b>	simple title here</a>
+                        	<a href="#" class="dashbutton">	<img src="cupcake/img/icons/dashbutton/search.png" width="32" height="32" alt="icon" />	<b>Search</b>	simple title here</a>
+                           	<div class="clear"></div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="clear"></div>
+                    
+                    </div>
+                    <!-- END CONTENT -->
+                
+            
+            
+            
+            
+            
+            
+        </div>
+        <!-- END PAGE -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="clear"></div>
+    </div>
+    <!-- END MAIN -->
+    
+    
+    
+    
+    
+    
+    <!-- START FOOTER -->
+    <div id="footer">
+    	<div class="left-column">© Copyright 2012 - All rights reserved.</div>
+        <div class="right-column">Cupcake theme by <a href="http://themeforest.net/user/egemem" target="_blank">egemem</a></div>
+    </div>
+    <!-- END FOOTER -->
+    
+    
+    
+    
+    
+
+
+
+
+
+</div>
+</body>
+</html>
